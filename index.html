@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>LCBO - Wine Search</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <script src="https://use.fontawesome.com/2bcaa25304.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+
+  <div class="menu wrapper">
+    <div class="leftHead">
+      <div class="signIn">
+        <a href="">SIGN IN / REGISTER</a>
+      </div>
+      <div class="sub">
+        <a href="">SUBSCRIBE</a><br>
+        <a href="">STORE LOCATOR</a>
+      </div>
+    </div>  <!-- leftHead -->
+
+    <div class="midHead">
+        <img src="images/logo.svg">
+    </div>
+
+    <div class="rightHead">
+      <div class="topRight">
+        <a href="">LCBO | VINTAGES | FOOD & DRINK</a>
+      </div>
+      <div class="cart">
+        <a href=""><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+      </div>
+
+<!--       <div class="searchRight">
+        <input type="text" class="search" placeholder="">
+        <button class="searchB" type="button" id="search_submit"><span class="glyphicon glyphicon-search"></span>   <i class="fa fa-search" aria-hidden="true"></i></button>
+
+      </div> -->  <!-- searchRight -->
+
+    </div> <!-- rightHead -->
+  </div>
+</header> <!-- HEADER -->
+
+  <main>
+    <div class="topNav">
+        <div class="type">
+          <form action="" method="GET" class="userSelections" autocomplete="off" name="userSelections" id="userSelections">
+            <label for="redWine"> Red <input type="radio" class="radio" name="type" value="redWine" id="redWine">
+            </label>
+            <label for="whiteWine"> White <input type="radio" class="radio" name="type" value="whiteWine" id="whiteWine">
+           </label>
+        </div> <!-- TYPE -->
+        <div class="country">
+          <select name="country">
+            <option value="none">Select a Country</option>
+            <option value="none">---NO PREFERENCE---</option>
+            <option value="ARGENTINA">ARGENTINA</option>
+            <option value="AUSTRALIA">AUSTRALIA</option>
+            <option value="CANADA">CANADA</option>
+            <option value="CHILE">CHILE</option>
+            <option value="FRANCE">FRANCE</option>
+            <option value="GERMANY">GERMANY</option>
+            <option value="ITALY">ITALY</option>
+            <option value="USA">USA</option>
+          </select>
+        </div>
+
+        <div class="price">
+          <select name="price">
+            <option value="0-3000">Select a Price</option>
+            <option value="0-3000">--NO PREFERENCE--</option>
+            <option value='0-2000'> $0 - $20 </option>
+            <option value="2000-3000">$20 - $30</option>
+            <option value="3000">$30 and Up </option>
+          </select>
+        </div> <!-- PRICE -->
+
+<!--         <div class="style">
+          <select name="style">
+            <option value="none">Select a Style</option>
+            <option value="none">---NO PREFERENCE---</option>
+            <option value="Aromatic & Fruity">AROMATIC & FRUITY</option>
+            <option value="Aromatic & Flavourful">AROMATIC & FLAVOURFUL</option>
+            <option value="Full-bodied & Firm">FULL-BODIED & FIRM</option>
+            <option value="Full-bodied & Rich">FULL-BODIED & RICH</option>
+            <option value="Full-bodied & Smooth">FULL-BODIED & SMOOTH</option>
+            <option value="Light & Crisp">LIGHT & CRISP</option>
+            <option value="Light-bodie & Fruity">LIGHT-BODIED & FRUITY</option>
+            <option value="Medium-bodied & Fruity">MEDIUM-BODIED & FRUITY</option>
+            <option value="Off-dry & Fruity">OFF-DRY & FRUITY</option>
+            <option value="Soft & Off-dry">SOFT & OFF-DRY</option>
+            </select>
+          </div> -->
+        <input class="submit" type="submit">
+        </form>
+    </div> <!-- TOP NAV -->
+
+<div class="container" id="wineContainer">
+
+</div>
+<footer>
+<p>© 2017 LCBO</p>
+</footer>
+</main>
+
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
